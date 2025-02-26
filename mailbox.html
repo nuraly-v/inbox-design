@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9776/9776979.png " type="image/x-icon">
+    <title>Inbox: 13d</title>
+    <style>
+        * {
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        .inbox {
+            max-width: 530px;
+            box-shadow:30px 0px 0px rgba(255, 0, 0, 0.67);
+            border-radius: 10px;
+            padding: 1em 2.5em 1em 1em;
+            margin: 20px;
+            transition: 0.3s;
+        }
+
+        .inbox:hover {
+            transition: 0.3s;
+            box-shadow: 30px 30px 30px rgba(255, 0, 0, 0.67);
+        }
+
+        .messages {
+            width: 100%;
+            margin-top: 1.3em;
+            border: 0.5px solid gray;
+            border-radius: 10px;
+        }
+
+        .sender-pic {
+            border-radius: 50%;
+            width: 50px;
+        }
+
+        .message {
+            padding: 0.8em;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            transition: 0.2s;
+        }
+
+        .message:hover {
+            background-color: rgba(134, 97, 97, 0.617);
+            cursor: pointer;
+            transition: 0.2s;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .message:active {
+            opacity: 70%;
+        }
+
+        .message-content {
+            flex: 1;
+        }
+
+        .pic-container {
+            width: 70px;
+        }
+
+        .message-title {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5em;
+        }
+
+        .title-mes {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .second-titles {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 0.2em;
+        }
+
+        .all-inboxes {
+            font-size: 17px;
+        }
+
+        .ios-inbox {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ios-inbox">
+        <div class="inbox">
+            <p class="all-inboxes">ALL INBOXES</p>
+            <div class="messages">
+                <div class="message">
+                    <div class="pic-container"><img src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-11.jpeg" alt="" class="sender-pic"></div>
+                    <div class="message-content">
+                        <div class="message-title">
+                            <p class="title-mes">Destination Inc.</p>
+                            <p class="time">4:58 PM</p>
+                        </div>
+                        <p class="second-titles">Biggest sales of the year!</p>
+                        <p class="third-title">Hey there! We're writing to tell you about our...</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="pic-container"><img src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-4.jpeg" alt="" class="sender-pic"></div>
+                    <div class="message-content">
+                        <div class="message-title">
+                            <p class="title-mes">Veritasium</p>
+                            <p class="time">9:00 AM</p>
+                        </div>
+                        <p class="second-titles">The untold story of Oppenheimer</p>
+                        <p class="third-title">Hey there! We're writing to tell you about our...</p>
+                    </div>
+                </div>
+                <div class="message">
+                    <div class="pic-container"><img src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-1.jpeg" alt="" class="sender-pic"></div>
+                    <div class="message-content">
+                        <div class="message-title">
+                            <p class="title-mes">Marques Brownlee</p>
+                            <p class="time">4:58 PM</p>
+                        </div>
+                        <p class="second-titles">Tech update: AI products</p>
+                        <p class="third-title">Hey there! We're writing to tell you about our...</p>
+                    </div>
+                </div>
+                                <div class="message">
+                    <div class="pic-container"><img src="https://supersimple.dev/exercises/youtube/channel-profile-pics/channel-2.jpeg" alt="" class="sender-pic"></div>
+                    <div class="message-content">
+                        <div class="message-title">
+                            <p class="title-mes">Markiplier</p>
+                            <p class="time">12:56 PM</p>
+                        </div>
+                        <p class="second-titles">Collaboration request</p>
+                        <p class="third-title">Hey there! We're writing to tell you about our...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
